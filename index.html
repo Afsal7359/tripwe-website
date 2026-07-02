@@ -814,8 +814,11 @@ burger.addEventListener('click',()=>{const o=mm.classList.toggle('open');burger.
 mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');burger.classList.remove('open');document.body.style.overflow=''}));
 
 /* ---------- reveal observer ---------- */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.rv,.rv-l,.rv-r,.rv-scale,.stagger').forEach(el=>io.observe(el));
+/* safety net: reveal anything the observer missed once it crosses the viewport */
+const revealSweep=()=>document.querySelectorAll('.rv:not(.in),.rv-l:not(.in),.rv-r:not(.in),.rv-scale:not(.in),.stagger:not(.in)').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight*.92)el.classList.add('in')});
+window.addEventListener('scroll',revealSweep,{passive:true});window.addEventListener('load',revealSweep);
 /* stagger children delay */
 document.querySelectorAll('.stagger').forEach(g=>[...g.children].forEach((c,i)=>c.style.transitionDelay=(i*90)+'ms'));
 
