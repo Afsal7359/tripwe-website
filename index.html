@@ -36,6 +36,7 @@
   "@context": "https://schema.org",
   "@type": "TravelAgency",
   "name": "Tripwe Tours & Travels",
+  "legalName": "Tripwe Tours and Travels LLP",
   "description": "Full-service travel agency in Koyilandy, Calicut, Kerala — flight ticketing, visa services, Umrah packages, holiday packages, hotel booking, passport services, attestation and more.",
   "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&h=630&fit=crop&q=80&auto=format",
   "telephone": "+918714422256",
@@ -251,8 +252,8 @@ h1 em{font-style:normal;font-weight:500;color:var(--sand)}
 .dest .info p{font-size:12.5px;color:rgba(251,247,240,.7);opacity:0;max-height:0;transition:.5s var(--ease);font-weight:300}
 .dest:hover .info p{opacity:1;max-height:60px;margin-top:6px}
 
-/* ---------- stays ---------- */
-#stays{background:var(--espresso);overflow:hidden}
+/* ---------- resorts ---------- */
+#resorts{background:var(--espresso);overflow:hidden}
 .stay-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(44px,6vw,90px);align-items:center}
 .stay-imgs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .stay-imgs .arch{aspect-ratio:3/4.4}
@@ -414,8 +415,9 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#umrah">Umrah</a></li>
       <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#resorts">Resorts</a></li>
+      <li><a href="#umrah">Umrah</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#contact" class="nav-cta">Plan My Trip</a></li>
     </ul>
@@ -425,9 +427,9 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
 <div id="mobileMenu">
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#umrah">Umrah</a>
   <a href="#destinations">Destinations</a>
-  <a href="#stays">Stays</a>
+  <a href="#resorts">Resorts</a>
+  <a href="#umrah">Umrah</a>
   <a href="#blog">Blog</a>
   <a href="#contact">Contact</a>
   <div class="mm-contact">Call · 87144 22256</div>
@@ -513,6 +515,52 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
   </div>
 </section>
 
+
+<!-- DESTINATIONS -->
+<section id="destinations">
+  <div class="wrap">
+    <div class="dest-head rv">
+      <span class="eyebrow" style="justify-content:center">Holiday packages</span>
+      <h2 class="sec-title">Places our travellers<br><em>fall in love with.</em></h2>
+      <p class="lead">Tailor-made itineraries — flights, stays, sightseeing and visas bundled into one seamless package. Tell us your dream; we'll map it.</p>
+    </div>
+    <div class="dest-grid stagger">
+      <article class="dest"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80&auto=format&fit=crop" alt="Dubai skyline at dusk" loading="lazy"><div class="info"><small>United Arab Emirates</small><h3>Dubai</h3><p>Desert safaris, sky-high views & shopping festivals.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop" alt="Maldives overwater villas and turquoise lagoon" loading="lazy"><div class="info"><small>Indian Ocean</small><h3>Maldives</h3><p>Honeymoons in overwater villas on turquoise lagoons.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80&auto=format&fit=crop" alt="Bali temple gate and rice terraces" loading="lazy"><div class="info"><small>Indonesia</small><h3>Bali</h3><p>Temples, rice terraces and beach-club sunsets.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&auto=format&fit=crop" alt="Snow-capped Himalayan peaks" loading="lazy"><div class="info"><small>India</small><h3>Kashmir</h3><p>Shikara rides, saffron valleys and snowy passes.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=800&q=80&auto=format&fit=crop" alt="Sunset over a turquoise bay at Phi Phi Islands, Thailand" loading="lazy"><div class="info"><small>Thailand</small><h3>Phuket & Krabi</h3><p>Island hopping, turquoise bays and night markets.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1572025310208-2fd6b91764c1?w=800&q=80&auto=format&fit=crop" alt="Aerial view of a coral island lagoon in Lakshadweep" loading="lazy"><div class="info"><small>India</small><h3>Lakshadweep</h3><p>Untouched coral lagoons and white sandbars.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1508062878650-88b52897f298?w=800&q=80&auto=format&fit=crop" alt="Petronas Twin Towers lit up at night, Kuala Lumpur" loading="lazy"><div class="info"><small>Malaysia</small><h3>Kuala Lumpur</h3><p>Twin towers, street food and rainforest escapes.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1550679193-d8ec2f2c3a25?w=800&q=80&auto=format&fit=crop" alt="Train crossing the Nine Arch Bridge in Ella, Sri Lanka" loading="lazy"><div class="info"><small>Sri Lanka</small><h3>Ella & Kandy</h3><p>Misty tea hills and the famous Nine Arch Bridge.</p></div></article>
+    </div>
+    <div style="text-align:center;margin-top:70px" class="rv">
+      <a class="btn btn-dark" href="https://wa.me/918714422256?text=Hi%20Tripwe!%20I%27d%20like%20a%20custom%20holiday%20package." target="_blank" rel="noopener">Build My Package <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- RESORTS -->
+<section id="resorts" class="dark">
+  <div class="wrap">
+    <div class="dest-head rv">
+      <span class="eyebrow" style="justify-content:center">Resorts & stays</span>
+      <h2 class="sec-title">Unwind in resorts<br><em>close to nature.</em></h2>
+      <p class="lead" style="margin:0 auto">Hand-picked, verified resorts across Kerala's favourite escapes — misty Wayanad, tea-country Munnar, Alleppey backwaters and more. We negotiate the rates and confirm your stay instantly.</p>
+    </div>
+    <div class="dest-grid stagger">
+      <article class="dest"><img src="https://images.unsplash.com/photo-1616388969587-8196f32388b4?w=800&q=80&auto=format&fit=crop" alt="Misty green hills and river valley in Wayanad, Kerala" loading="lazy"><div class="info"><small>Kerala · Hill Escape</small><h3>Wayanad</h3><p>Treehouses and plantation resorts amid misty forests.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1719831738921-972e0ec76337?w=800&q=80&auto=format&fit=crop" alt="Mist rolling over tea plantations in Munnar, Kerala" loading="lazy"><div class="info"><small>Kerala · Tea Country</small><h3>Munnar</h3><p>Tea-garden resorts with valley-view balconies.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80&auto=format&fit=crop" alt="Houseboat on the Alleppey backwaters, Kerala" loading="lazy"><div class="info"><small>Kerala · Backwaters</small><h3>Alleppey</h3><p>Premium houseboats drifting past palm-lined shores.</p></div></article>
+      <article class="dest"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80&auto=format&fit=crop" alt="Infinity pool at a luxury resort" loading="lazy"><div class="info"><small>Kerala & Beyond</small><h3>Pool Villas</h3><p>Honeymoon-ready private villas and luxury resorts.</p></div></article>
+    </div>
+    <div class="hero-ctas rv" style="justify-content:center;margin-top:70px">
+      <a class="btn btn-solid" href="https://wa.me/918714422256?text=Hi%20Tripwe!%20I%20need%20a%20resort%20booking." target="_blank" rel="noopener">Book a Resort <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/staywith_tripwe?igsh=M3FmNmxjbnhsbW11" target="_blank" rel="noopener">@staywith_tripwe</a>
+    </div>
+  </div>
+</section>
+
 <!-- UMRAH -->
 <section id="umrah">
   <div class="wrap umrah-grid">
@@ -533,53 +581,6 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
     </div>
     <div class="umrah-visual rv-scale">
       <div class="arch"><img src="https://images.unsplash.com/photo-1770786106021-52580470e31e?w=900&q=80&auto=format&fit=crop" alt="Pilgrims at the holy mosque in Makkah" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
-<!-- DESTINATIONS -->
-<section id="destinations">
-  <div class="wrap">
-    <div class="dest-head rv">
-      <span class="eyebrow" style="justify-content:center">Holiday packages</span>
-      <h2 class="sec-title">Places our travellers<br><em>fall in love with.</em></h2>
-      <p class="lead">Tailor-made itineraries — flights, stays, sightseeing and visas bundled into one seamless package. Tell us your dream; we'll map it.</p>
-    </div>
-    <div class="dest-grid stagger">
-      <article class="dest"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80&auto=format&fit=crop" alt="Dubai skyline at dusk" loading="lazy"><div class="info"><small>United Arab Emirates</small><h3>Dubai</h3><p>Desert safaris, sky-high views & shopping festivals.</p></div></article>
-      <article class="dest"><img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80&auto=format&fit=crop" alt="Maldives overwater villas and turquoise lagoon" loading="lazy"><div class="info"><small>Indian Ocean</small><h3>Maldives</h3><p>Honeymoons in overwater villas on turquoise lagoons.</p></div></article>
-      <article class="dest"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80&auto=format&fit=crop" alt="Bali temple gate and rice terraces" loading="lazy"><div class="info"><small>Indonesia</small><h3>Bali</h3><p>Temples, rice terraces and beach-club sunsets.</p></div></article>
-      <article class="dest"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&auto=format&fit=crop" alt="Snow-capped Himalayan peaks" loading="lazy"><div class="info"><small>India</small><h3>Kashmir</h3><p>Shikara rides, saffron valleys and snowy passes.</p></div></article>
-    </div>
-    <div style="text-align:center;margin-top:70px" class="rv">
-      <a class="btn btn-dark" href="https://wa.me/918714422256?text=Hi%20Tripwe!%20I%27d%20like%20a%20custom%20holiday%20package." target="_blank" rel="noopener">Build My Package <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
-
-<!-- STAYS -->
-<section id="stays" class="dark">
-  <div class="wrap stay-grid">
-    <div class="rv-l">
-      <span class="eyebrow">Stay with Tripwe</span>
-      <h2 class="sec-title">Hotels & resorts,<br><em>hand-picked</em> for you.</h2>
-      <p class="lead">From budget business hotels to luxury beach resorts and hill-top hideaways — we negotiate the rates, verify the properties and confirm your stay instantly. Follow @staywith_tripwe for stay inspiration.</p>
-      <div class="pill-row stagger">
-        <span class="pill">Luxury Resorts</span>
-        <span class="pill">Business Hotels</span>
-        <span class="pill">Honeymoon Villas</span>
-        <span class="pill">Family Stays</span>
-        <span class="pill">Houseboats</span>
-        <span class="pill">Group Bookings</span>
-      </div>
-      <div class="hero-ctas">
-        <a class="btn btn-solid" href="https://wa.me/918714422256?text=Hi%20Tripwe!%20I%20need%20a%20hotel%2Fresort%20booking." target="_blank" rel="noopener">Book a Stay <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="https://www.instagram.com/staywith_tripwe?igsh=M3FmNmxjbnhsbW11" target="_blank" rel="noopener">@staywith_tripwe</a>
-      </div>
-    </div>
-    <div class="stay-imgs rv-r">
-      <div class="arch"><img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=700&q=80&auto=format&fit=crop" alt="Luxury resort infinity pool" loading="lazy"></div>
-      <div class="arch"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=700&q=80&auto=format&fit=crop" alt="Kerala backwater houseboat" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -632,7 +633,6 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
           <div class="meta"><span>Umrah</span><span>·</span><span>6 min read</span></div>
           <h3>First Umrah? A complete step-by-step guide from Kerala</h3>
           <p>Visa timelines, what to pack, ihram essentials and how to choose between group and private packages — everything first-time pilgrims ask us.</p>
-          <a class="more" href="https://wa.me/918714422256?text=Hi!%20I%20read%20your%20Umrah%20guide%20and%20want%20to%20know%20more." target="_blank" rel="noopener">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
       <article class="post">
@@ -641,7 +641,6 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
           <div class="meta"><span>Visa & Documents</span><span>·</span><span>4 min read</span></div>
           <h3>Visa rejected? 7 common mistakes and how to avoid them</h3>
           <p>Incomplete funds proof, wrong photos, mismatched dates — the small errors that cause big rejections, and how our visa desk prevents them.</p>
-          <a class="more" href="https://wa.me/918714422256?text=Hi!%20I%20need%20help%20with%20a%20visa%20application." target="_blank" rel="noopener">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
       <article class="post">
@@ -650,7 +649,6 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
           <div class="meta"><span>Holidays</span><span>·</span><span>5 min read</span></div>
           <h3>Dubai on a budget: the smart traveller's 5-day itinerary</h3>
           <p>When to fly from Calicut for the lowest fares, free attractions worth your time, and how package bookings beat DIY pricing.</p>
-          <a class="more" href="https://wa.me/918714422256?text=Hi!%20Tell%20me%20about%20Dubai%20packages." target="_blank" rel="noopener">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </article>
     </div>
@@ -693,14 +691,14 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
         </div>
         <div class="c-block">
           <small>Our office</small>
-          <p class="addr">Tripwe Tours & Travels<br>Customs Road, Koyilandy<br>Calicut, Kerala, India — 673620</p>
+          <p class="addr">Tripwe Tours and Travels LLP<br>Customs Road, Koyilandy<br>Calicut, Kerala, India — 673620</p>
         </div>
         <div class="c-block">
           <small>Follow us</small>
           <div class="socials">
             <a href="https://www.instagram.com/tripwe_tours?igsh=MXZ3eDZkdWJ2a2kyMA==" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><div><b>@tripwe_tours</b><small>Trips, offers & travel updates</small></div></a>
-            <a href="https://www.instagram.com/tripwe_umrah?igsh=MTdrZjM5MHJhODZwYQ==" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><div><b>@tripwe_umrah</b><small>Umrah journeys & departures</small></div></a>
             <a href="https://www.instagram.com/staywith_tripwe?igsh=M3FmNmxjbnhsbW11" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><div><b>@staywith_tripwe</b><small>Hotels, resorts & stays</small></div></a>
+            <a href="https://www.instagram.com/tripwe_umrah?igsh=MTdrZjM5MHJhODZwYQ==" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><div><b>@tripwe_umrah</b><small>Umrah journeys & departures</small></div></a>
           </div>
         </div>
       </div>
@@ -724,8 +722,9 @@ footer{background:var(--ink);color:var(--ivory);padding:80px 0 0;position:relati
       <ul>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#umrah">Umrah Packages</a></li>
         <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#resorts">Resorts & Stays</a></li>
+        <li><a href="#umrah">Umrah Packages</a></li>
         <li><a href="#blog">Travel Blog</a></li>
       </ul>
     </div>
